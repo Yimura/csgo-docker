@@ -8,5 +8,7 @@ services:
       - 27015:27015/tcp
       - 27015:27015/udp
       - 27020:27020/udp
+    restart: unless-stopped
+    user: csgo
     volumes:
       - ./srv:/srv
